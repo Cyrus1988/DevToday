@@ -28,4 +28,5 @@ use Illuminate\Support\Facades\Route;
 Route::resource('posts', PostController::class)->names('posts');
 Route::resource('comments', CommentController::class)->names('comments');
 
+
 Route::post('post-vote', [PostController::class, 'vote'])->name('post.vote');
